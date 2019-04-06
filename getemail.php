@@ -3,7 +3,7 @@
 $email = "cyrusmasseycook@gmail.com";
 
 // reCaptcha info
-$secret = "6LcwZJwUAAAAAGcPpCiM0NVOOnqrZIxwoyXEiYzQ";
+$secret = "Not Here";
 // Development Site Key, will allow all requests
 //$secret = "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe";
 $remoteip = $_SERVER["REMOTE_ADDR"];
