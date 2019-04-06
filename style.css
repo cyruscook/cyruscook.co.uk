@@ -1,0 +1,270 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: #F8F8F8;
+	color: #00202A;
+}
+
+h1::selection, a::selection, p::selection
+{
+	color: inherit;
+	background: lightgray;
+}
+
+a
+{
+	color: inherit;
+	text-decoration: inherit;
+}
+
+a:hover
+{
+	color: inherit;
+	text-decoration: inherit;
+}
+
+/* ------------------------------------------------------------------------------------------------------*/
+/*							EMAIL CAPTCHA						*/
+
+div.recaptcha-holder
+{
+	visibility: hidden;
+	opacity: 0;
+	height: 0;
+}
+
+div.modal-body > div.email-content > a.captcha-email
+{
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+div.modal-body > div.email-content > small > a
+{
+	text-decoration: underline;
+}
+
+div.captcha-spinner
+{
+	display: inline-block;
+	height: 50px;
+}
+
+div.captcha-spinner::before
+{
+    display: inline-block;
+	top: initial;
+	margin-top: 0;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------*/
+/*							INTRO SECTION						*/
+
+section.intro
+{
+	display: grid;
+	grid-template-rows: 1fr min-content;
+}
+
+section.intro > div.title
+{
+	margin: auto;
+	text-align: center;
+}
+
+section.intro > div.title > h1
+{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 7vw;
+}
+
+@media only screen and (max-width: 1024px) {
+	section.intro > div.title > h1
+	{
+		font-size: 15vw;
+	}
+}
+
+section.intro > div.title > p
+{
+	font-size: 1.2vw;
+}
+
+@media only screen and (max-width: 1024px) {
+	section.intro > div.title > p
+	{
+		font-size: 3vw;
+	}
+}
+
+section.intro > div.title > div.sm-dock > a.sm-icon
+{
+	margin: 0 5px;
+	color: inherit;
+}
+
+section.intro > div.title > div.sm-dock > a.sm-icon::selection
+{
+	background: none;
+	color: inherit;
+}
+
+section.intro > div.title > div.sm-dock > a.sm-icon > i.fab, section.intro > div.title > div.sm-dock > a.sm-icon > i.fas
+{
+	font-size: 2.5vw;
+	transition: transform 0.075s ease-out;
+}
+
+@media only screen and (max-width: 1024px) {
+	section.intro > div.title > div.sm-dock > a.sm-icon > i.fab, section.intro > div.title > div.sm-dock > a.sm-icon > i.fas
+	{
+		font-size: 6vw;
+	}
+}
+
+a > i.fab, a > i.fas
+{
+	cursor: pointer;
+}
+
+a > i.fab:hover, a > i.fas:hover
+{
+	transform: scale(1.1);
+}
+
+div.intro-chevron
+{
+	text-align: center;
+}
+
+div.intro-chevron > a.sm-icon
+{
+	position: absolute;
+	bottom: 2%;
+	cursor: pointer;
+}
+	
+div.intro-chevron > a.sm-icon > i.fas
+{
+	font-size: 1.5vw;
+	transition: transform 0.075s ease-out;
+}
+
+@media only screen and (max-width: 1024px) {
+	div.intro-chevron > a.sm-icon > i.fas
+	{
+		font-size: 4.5vw;
+	}
+}
+
+
+/* ------------------------------------------------------------------------------------------------------*/
+/*							LANGUAGES SECTION						(Not in use)
+
+section.languages
+{
+	display: grid;
+}
+
+section.languages > div.lang-icons
+{
+	margin: auto;
+	cursor: default;
+}
+
+section.languages > div.lang-icons::selection, section.languages > div.lang-icons > img.lang-icon::selection
+{
+	background: none;
+	color: inherit;
+}
+
+
+section.languages > div.lang-icons > .lang-icon
+{
+	transition: transform 0.05s ease-out;
+	margin: 0 5px;
+}
+section.languages > div.lang-icons > i.lang-icon
+{
+	font-size: 3vw;
+}
+
+section.languages > div.lang-icons > img.lang-icon
+{
+	height: 3vw;
+	width: 3vw;
+    vertical-align: text-bottom;
+}*/
+
+
+/* ------------------------------------------------------------------------------------------------------*/
+/*							ASK ME ANYTHING						*/
+
+section.ask-me
+{
+	background-color: #303030;
+	color: #EBEBEB;
+	display: grid;
+}
+
+section.ask-me > div.search
+{
+	margin: auto;
+}
+
+section.ask-me > div.search > p
+{
+	margin-bottom: 0;
+	font-weight: bold;
+}
+
+section.ask-me > div.search > div.question
+{
+}
+
+section.ask-me > div.search > div.question > div.complete
+{
+	padding: 0 12px;
+	color: #a6a6a6b3;
+	transition: all ease-out 0.25s;
+	width: 60vw;
+}
+
+section.ask-me > div.search > div.question > input
+{
+	background-color: transparent;
+    padding: 2px 10px;
+    border: 2px solid #EBEBEB;
+	border-radius: 10px;
+	color: inherit;
+	width: 60vw;
+}
+
+section.ask-me > div.search > div.question > input:focus
+{
+	outline: none;
+}
+
+@media only screen and (max-width: 1024px) {
+	section.ask-me > div.search > div.question > input
+	{
+		width: 80vw;
+	}
+
+		section.ask-me > div.search > div.question > div.complete
+	{
+		width: 80vw;
+	}
+}
+
+section.ask-me > div.search > div.answer
+{
+}
+
+section.ask-me > div.search > div.answer > p.answer-text
+{
+
+}
